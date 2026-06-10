@@ -34,6 +34,8 @@ DSTEC/
 
 ## Environment
 
+pip install -r requirements.txt
+
 The code is implemented with PyTorch. The main dependencies include:
 
 ```text
