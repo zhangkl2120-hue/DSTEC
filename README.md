@@ -31,6 +31,26 @@ DSTEC/
 │   └── metrics.py                        # Evaluation metrics
 └── README.md
 ```
+## Dataset Sources
+
+The traffic datasets used in this project are based on the California Performance Measurement System (PeMS). PeMS traffic data are collected from highway loop detectors deployed across California freeway systems.
+
+For the commonly used processed benchmark versions, users may refer to public traffic forecasting repositories that provide PeMS-style datasets, such as:
+
+* Caltrans PeMS official source: https://pems.dot.ca.gov/
+* ASTGCN / ASTGCN-style PeMSD4 and PeMSD8 datasets: https://github.com/guoshnBJTU/ASTGCN-2019-pytorch
+
+Due to dataset size and redistribution constraints, this repository does not include raw datasets or large processed files. Users should download the corresponding datasets from the above sources and organize them into the following ASTGCN-style structure:
+
+```text
+data/
+└── PEMS04/
+    ├── PEMS04.npz
+    ├── PEMS04_r1_d0_w0_astcgn.npz
+    ├── PEMS04_As_ours.npy
+    └── PEMS04_pattern_bank_hybrid_U256_P256_r1d0w0.npz
+```
+
 
 ## Environment
 
