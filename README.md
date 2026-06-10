@@ -124,5 +124,3 @@ python train_ours.py \
 ## Notes
 
 This repository currently provides the core implementation of the proposed method, including the model architecture, temporal pattern bank construction, LLM-guided spatial graph expansion, and stage-wise expert collaboration training logic.
-
-The current version is intended to help reviewers inspect the main implementation details. Full cleaned reproduction scripts, complete configuration files, and detailed data preprocessing instructions will be released after acceptance.
