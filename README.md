@@ -16,7 +16,7 @@ DSTEC consists of three main components:
 
    The spatial expert constructs candidate latent topological links from structural cues, such as multi-hop neighborhoods, centrality statistics, common neighbors, and local structural support. A rubric-guided LLM relation evaluator is then used to reason over the plausibility and risk of each candidate relation. Verified relations are added to the original traffic topology to build an expanded spatial graph.
 
-3. **Stability-Guided Spatio-Temporal Expert Collaboration**
+3. **Spatio-Temporal Expert Mutual Learning**
 
    The temporal and spatial experts are trained with a stage-wise collaboration mechanism. At each stage, a historical-best checkpoint is used as the reference model, and perturbation-based stability is used to select the more stable expert as the teacher. The selected expert provides guidance to the other expert, enabling mutual learning and reducing the disturbance caused by unreliable spatio-temporal interaction.
 
